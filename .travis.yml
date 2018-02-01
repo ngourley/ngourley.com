@@ -1,3 +1,11 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
+deploy:
+  provider: releases
+  api_key:
+    secure: BafjPt63UTrYjRe6Cxpu6eclhMYSqrAVV19YTWoR+vE+96ASsSsvYKfqyYqNQiRtTV50PdhzaBDKsiG2Ow+MosQSyIubxWRQTk6N2n/VZDLSJjw/Zk546a6IZd7J+KboEkGpYJgA2hx97KFyx4UCx/NQWae/eCNtnpR3EEqQeiG/26L/OXGOer3kdDFMdVydxS+lo/mFgGeZX8U4f7edXGo8f83oolWHwHu84ny1LcGJiEgssS8NK5dgzHOguEQewtseDJmqH2kRr0kus2gy4l6SL0CMafcpjR7HMfksjkoFrRVpjOoOumly+RdbNsIYSuw/7W9kvhPZmLepDUyIXOB9mPawI+ovd+iRyGSQHgryiDelQ2M12rpj24mTPVOv7gKFmASiZKV5H1ekR9ul68c22PWBhSNvM4V7agxShcQfeM/gBdV7DWTq8jgvm7RwKnaIBTk+KmLdAxnxh6Brvh1Vp2q27hIb02E9jSw3ViXccWHiYRMU2s6aCvshGFIMTq/8GizH4pA7AMD0dNZ8TyzIIUXBaCsIsXszsbuaGoCXMTOB1PImcmmkV2jUAH1EZfpxGKVwFtMAOvfANad8Rtw6TOPAmXeZH+nHZt7Bc9SOaG58YOdE/lJa7A0R6r8+bwZyO1xZafyJwIp7jkPADM2MYU7nXbPF4epZp9CtMCA=
+  file: target/Site*.jar
+  file_glob: true
+  on:
+    repo: ngourley/Site
