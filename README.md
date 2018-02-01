@@ -1,1 +1,1 @@
-# Website repository for ngourley.com
+# ngourley.com
