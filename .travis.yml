@@ -13,3 +13,5 @@ deploy:
   tag_name: ${APP_VERSION}-${TRAVIS_BUILD_NUMBER}
   on:
     repo: ngourley/ngourley.com
+after_success:
+  - mvn jacoco:report coveralls:report -DrepoToken=${COVERALLS_TOKEN}
