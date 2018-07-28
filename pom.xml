@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ngourley</groupId>
-    <artifactId>Site</artifactId>
+    <artifactId>ngourley.com</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>com.ngourley Site</name>
+    <name>com.ngourley</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.2.21</kotlin.version>
+        <kotlin.version>1.2.51</kotlin.version>
         <junit.version>4.12</junit.version>
     </properties>
 
@@ -90,6 +90,15 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+                <configuration>
+                    <repoToken>kDAXAvEo3VikjwjoMehzQKBDlTyEanNyU</repoToken>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
