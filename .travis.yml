@@ -2,7 +2,7 @@ language: java
 jdk:
 - oraclejdk8
 script:
-  - export APP_VERSION=$(gawk 'match($0, /<version>(.*)<\/version>/, arr) { print arr[1]}' pom.xml)
+  - export APP_VERSION=$(gawk 'match($0, /<version>(.*)<\/version>/, arr) { print arr[1]; exit}' pom.xml | tr -d '\\n')
 deploy:
   provider: releases
   skip_cleanup: true
