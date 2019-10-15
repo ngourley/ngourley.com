@@ -1,0 +1,28 @@
+{
+  "name": "ngourley.com",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/ngourley/ngourley.com.svg?branch=master)](https://travis-ci.org/ngourley/ngourley.com) [![Coverage Status](https://coveralls.io/repos/github/ngourley/ngourley.com/badge.svg?branch=master)](https://coveralls.io/github/ngourley/ngourley.com?branch=master)",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "webpack": "^4.16.3",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --verbose",
+    "start:dev": "webpack-dev-server"
+  },
+  "bugs": {
+    "url": "https://github.com/ngourley/ngourley.com/issues"
+  },
+  "homepage": "https://github.com/ngourley/ngourley.com#readme"
+}
