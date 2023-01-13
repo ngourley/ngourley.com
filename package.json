@@ -4,7 +4,7 @@
   "description": "[![Build Status](https://travis-ci.org/ngourley/ngourley.com.svg?branch=master)](https://travis-ci.org/ngourley/ngourley.com) [![Coverage Status](https://coveralls.io/repos/github/ngourley/ngourley.com/badge.svg?branch=master)](https://coveralls.io/github/ngourley/ngourley.com?branch=master)",
   "main": "index.js",
   "dependencies": {
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
